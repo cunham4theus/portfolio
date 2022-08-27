@@ -1,0 +1,57 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin:0 auto;
+  color: var(--cl-tpg_primary);
+  background-color: var( --cl-bg_dark);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  overflow-X: hidden;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+html {
+  /* 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+i{
+  margin: 0 2rem;
+}

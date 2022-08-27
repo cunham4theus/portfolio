@@ -1,0 +1,95 @@
+@media (max-width: 600px) {
+  .btn-card {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+/* details */
+.text__bold {
+  font-weight: 700;
+}
+/* stars */
+.sparkles {
+  position: relative;
+}
+.sparkles::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: clamp(1rem, 2vw, 2rem);
+  height: clamp(1rem, 2vw, 2rem);
+  background: url(../../img/Star4.png) no-repeat;
+  background-size: cover;
+  top: clamp(4rem, 6vw, 6rem);
+  right: clamp(2rem, 3vw, 3rem);
+}
+.sparkles::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: clamp(1.5rem, 3vw, 3rem);
+  height: clamp(1.5rem, 3vw, 3rem);
+  background: url(../../img/Star4.png) no-repeat;
+  background-size: cover;
+  bottom: clamp(3rem, 4.5vw, 4.5rem);
+  left: clamp(2rem, 3vw, 3rem);
+}
+/* button shadow effect */
+.btn {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.btn__shadowBtn {
+  width: 120px;
+  height: 40px;
+  border: 1px solid var(--cl-tpg_primary);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--cl-tpg_primary);
+  cursor: pointer;
+  position: relative;
+  font-family: Poppins, sans-serif;
+  font-size: large;
+}
+.btn__shadowBtn:hover {
+  background-color: var(--cl-bg_light);
+  color: var(--cl-tpg_secondary);
+  transition: 0.5s ease;
+  border: 1px solid var(--cl-bg_light);
+}
+.btn__shadowBtn::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: clamp(1.5rem, 3vw, 3rem);
+  height: clamp(1.5rem, 3vw, 3rem);
+  background: url(../../img/Star4.png) no-repeat;
+  background-size: cover;
+  bottom: clamp(4rem, 5.5vw, 5.5rem);
+  left: clamp(-3rem, -3vw, -3rem);
+}
+.btn__shadowBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background: transparent;
+  height: 50%;
+  width: 100%;
+  transform: perspective(1em) rotateX(48deg) scale(1, 0.35);
+  filter: blur(8px);
+  transition: 0.5s ease;
+}
+.btn__shadowBtn:hover::before {
+  background: var(--cl-tpg_primary);
+  top: 40px;
+}
+.hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hidden {
+    display: inline-block !important;
+  }
+}

@@ -1,0 +1,122 @@
+
+.main__intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  margin-bottom: 10rem;
+}
+.main__intro__introduction {
+  text-align: center;
+}
+/* hero */
+.main__about {
+  padding-inline: 3.6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  align-items: center;
+  max-width: 120rem;
+  margin-inline: auto;
+  place-items: center;
+  margin-bottom: 6rem;
+}
+.main__about__description {
+  max-width: 45ch;
+  margin-bottom: 6rem;
+}
+.main__about__imagem {
+  justify-self: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.main__about__imagem img {
+  width: 40rem;
+  border-radius: 50%;
+  object-fit: cover;
+  min-width: 18rem;
+}
+.main__about__imagem::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: clamp(2rem, 4vw, 4rem);
+  height: clamp(2rem, 4vw, 4rem);
+  background: url(../../img/Star4.png) no-repeat;
+  background-size: cover;
+  bottom: clamp(1rem, 4vw, 4rem);
+  right: clamp(1rem, 1vw, 1rem);
+}
+.main__about__imagem::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: clamp(3rem, 6vw, 6rem);
+  height: clamp(3rem, 6vw, 6rem);
+  background: url(../../img/Star4.png) no-repeat;
+  background-size: cover;
+  top: clamp(-1.5rem, -1.5vw, -1.5rem);
+  left: clamp(1rem, 1vw, 1rem);
+}
+/* techs */
+.main__about__tech {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.main__tech__item {
+  width: 9rem;
+  height: 6rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.main__tech__item i {
+  font-size: clamp(4.5rem, 6.5vw, 6.5rem);
+  transition: ease-in-out 0.3s;
+}
+.main__tech__item i:hover {
+  font-size: clamp(7.5rem, 9vw, 9rem);
+  color: var(--cl-tpg_hover);
+}
+.main__btn {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main__btn h2{
+  font: 400 clamp(2.5rem, 3vw, 3rem) / clamp(2rem, 2vw, 2rem)  "Cormorant SC", serif;
+}
+
+@media (min-width: 768px) {
+  .main__about {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main__about__imagem::after {
+    bottom: clamp(0rem, 1vw, 1rem);
+    right: clamp(1rem, 1vw, 1rem);
+  }
+  .main__about__imagem::before {
+    top: clamp(-4.5rem, -4.5vw, -4.5rem);
+    left: clamp(1rem, 1vw, 1rem);
+  }
+  /* techs */
+  .main__about__tech {
+    grid-column: 1/-1;
+  }
+  /* btn */
+  .main__btn {
+    grid-column: 1/-1;
+    grid-row: 3;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__btn h2{
+    font: 400 clamp(2.5rem, 3vw, 3rem) / clamp(1rem, 2vw, 2rem)  "Cormorant SC", serif;
+  }
+}

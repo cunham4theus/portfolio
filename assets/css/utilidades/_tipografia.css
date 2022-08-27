@@ -1,0 +1,30 @@
+.font__text {
+  font: 400 clamp(2rem, 2.4vw, 2.4rem) / 1.325 "Roboto", sans-serif;
+}
+.font__text--card {
+  font: 400 clamp(1.6rem, 1.8vw, 1.8rem) / 1.325 "Roboto", sans-serif;
+}
+.font__title--primary {
+  font: 400 clamp(3.5rem, 6vw, 6rem) / clamp(1rem, 2vw, 2rem)  "Cormorant SC", serif;
+}
+.font__title--secondary {
+  font: 400 clamp(3rem, 4.5vw, 4.5rem) / clamp(1rem, 1.5vw, 1.5rem) "Poppins", sans-serif;
+}
+.font__title--card {
+  font: 400 clamp(1.6rem, 2vw, 2rem) / 1.325 "Poppins", sans-serif;
+}
+.font__title--link {
+  font: 400 clamp(1.6rem, 2vw, 2rem) / clamp(2rem, 2vw, 2rem)  "Poppins", sans-serif;
+}
+.font__title--contact {
+  font: 400 clamp(1.4rem, 2vw, 2rem) / clamp(0.8rem, 2vw, 2rem)  "Poppins", sans-serif;
+}
+.font__serif--xl {
+  font: 400 clamp(7rem, 11vw, 11rem) / clamp( 4rem, 7vw, 7rem) "Cormorant SC", serif;
+}
+.font__serif--l {
+  font: 400 clamp(4rem, 7vw, 7rem) / 1.325 "Cormorant SC", serif;
+}
+.font__serif--m {
+  font: 400 clamp(2.2rem, 3vw, 2.6rem) / 1.325 "Cormorant SC", serif;
+}

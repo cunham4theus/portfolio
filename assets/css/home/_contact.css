@@ -1,0 +1,106 @@
+.contact {
+  max-width: 120rem;
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-inline: auto;
+  margin-bottom: 6rem;
+}
+.contact__title {
+  margin-bottom: 10rem;
+}
+.contact__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  flex-wrap: wrap;
+  gap: 3rem;
+  place-content: center;
+  place-items: center;
+  height: 30vh;
+  margin-bottom: 6rem;
+}
+.contact__image {
+  position: relative;
+  width: clamp(15rem, 25vw, 25rem);
+  height: clamp(15rem, 25vw, 25rem);
+}
+.contact__image img {
+  width: clamp(15rem, 25vw, 25rem);
+  height: clamp(15rem, 25vw, 25rem);
+  border-radius: 50%;
+  object-fit: cover;
+  min-width: 100%;
+  
+}
+.contact__image::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: clamp(1.5rem, 3vw, 3rem);
+  height: clamp(1.5rem, 3vw, 3rem);
+  background: url(../../img/Star4.png) no-repeat;
+  background-size: cover;
+  bottom: clamp(-1rem, -2vw, -2rem);
+  right: clamp(-2rem, -2vw, -2rem);
+}
+.contact__image::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: clamp(2.5rem, 4vw, 4rem);
+  height: clamp(2.5rem, 4vw, 4rem);
+  background: url(../../img/Star4.png) no-repeat;
+  background-size: cover;
+  top: clamp(-1.5rem, -1.5vw, -1.5rem);
+  left: clamp(-2rem, -2vw, -2rem);
+}
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3rem 0;
+  place-items: center;
+
+}
+.contact__address p {
+  margin-bottom: 1rem;
+  word-break: break-all;
+}
+.contact__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  height: 5rem;
+}
+.contact__list-item {
+  margin-bottom: 1rem;
+  width: 8rem;
+}
+.contact__list-item:hover {
+  color: var(--cl-tpg_hover);
+  font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+  .contact__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__form {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .contact__image {
+    justify-self: end;
+  }
+  .contact__list {
+    font-size: inherit;
+    display: block;
+    margin-top: 0;
+  }
+ .contact__list-item a {
+  display: flex;
+  }
+  .contact__list-item:hover {
+    font-size: 2rem;
+  }
+}

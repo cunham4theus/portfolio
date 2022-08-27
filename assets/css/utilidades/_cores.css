@@ -1,0 +1,43 @@
+:root {
+  --cl-tpg_detail: #1f404e;
+  --cl-tpg_primary: #e0e0eb;
+  --cl-tpg_secondary: #17191d;
+  --cl-tpg_hover: #f0ffff;
+
+  --cl-bg_dark: #171b1d;
+  --cl-bg_light: #f0ffff;
+  --cl-bg_secondary: #01070a;
+
+  --cl-shadow: #14191b;
+
+  --cl-card_primary: hsla(198, 43%, 21%, 0.747);
+  --cl-card_secondary:rgba(20, 20, 20, 0.6);
+}
+.cl-tpg__detail {
+  color: var(--cl-tpg_detail);
+}
+.cl-tpg__primary {
+  color: var(--cl-tpg_primary);
+}
+.cl-tpg__secondary {
+  color: var(--cl-tpg_secondary);
+  
+}
+.cl-tpg__hover {
+  color: var(--cl-tpg_hover);
+}
+
+.cl-bg__light {
+  background: var(--cl-bg_light);
+}
+.cl-bg__dark {
+  background: var(--cl-bg_dark);
+}
+.cl-bg__secondary {
+  background: var(--cl-bg_secondary);
+  box-shadow: 0px 0px 25px var( --cl-bg_secondary);
+}
+
+.cl-shadow {
+  color: var(--cl-shadow);
+}

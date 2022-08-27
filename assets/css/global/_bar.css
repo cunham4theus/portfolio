@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(  --cl-tpg_primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var( --cl-tpg_detail);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #124d68;
+}

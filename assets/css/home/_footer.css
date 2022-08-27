@@ -1,0 +1,25 @@
+
+.footer {
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 8rem;
+}
+.footer__scroll-top i {
+  margin: 0;
+  
+}.footer__scroll-top {
+ color: var(--cl-tpg_hover); 
+}
+
+@media (min-width: 768px) {
+  .footer {
+  padding-bottom: 1rem;
+  }
+  .footer__scroll-top:hover {
+    color: var(--cl-tpg_hover);
+  }
+}
