@@ -20,7 +20,6 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
-
 }
 .grids h1 {
   font: 400 clamp(3.5rem, 6vw, 6rem) / 3rem "Cormorant SC", serif;
@@ -138,7 +137,7 @@
       var(--cl-card_primary),
       var(--cl-card_secondary)
     ),
-    url("/assets/img/Sem\ \ 2.png");
+    url("/assets/img/bikcraft1.png");
 }
 #front-2 {
   background-image: linear-gradient(
@@ -188,7 +187,7 @@
       var(--cl-card_primary),
       var(--cl-card_secondary)
     ),
-    url("/assets/img/Sem\ título.png");
+    url("/assets/img/bikcraft2.png");
 }
 #back-2 {
   background-image: linear-gradient(
