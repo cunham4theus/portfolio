@@ -18,7 +18,7 @@
   display: block;
   width: clamp(1rem, 2vw, 2rem);
   height: clamp(1rem, 2vw, 2rem);
-  background: url(../../img/Star4.png) no-repeat;
+  background: url(../img/Star4.png) no-repeat;
   background-size: cover;
   top: clamp(4rem, 6vw, 6rem);
   right: clamp(2rem, 3vw, 3rem);
@@ -29,7 +29,7 @@
   display: block;
   width: clamp(1.5rem, 3vw, 3rem);
   height: clamp(1.5rem, 3vw, 3rem);
-  background: url(../../img/Star4.png) no-repeat;
+  background: url(../img/Star4.png) no-repeat;
   background-size: cover;
   bottom: clamp(3rem, 4.5vw, 4.5rem);
   left: clamp(2rem, 3vw, 3rem);
@@ -64,7 +64,7 @@
   display: block;
   width: clamp(1.5rem, 3vw, 3rem);
   height: clamp(1.5rem, 3vw, 3rem);
-  background: url(../../img/Star4.png) no-repeat;
+  background: url(../img/Star4.png) no-repeat;
   background-size: cover;
   bottom: clamp(4rem, 5.5vw, 5.5rem);
   left: clamp(-3rem, -3vw, -3rem);
